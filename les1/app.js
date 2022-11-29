@@ -2,6 +2,7 @@ class App
 {
     runApplication()
     {
+        
         console.log("Hello World!");
         //code gaat hier!
         let appNaam = "Les 1";
