@@ -2,7 +2,11 @@ class App
 {
     runApplication()
     {
-        //code gaat hier!
+        this.tekenHuis();
+    }
+
+    tekenHuis()
+       {
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
         
