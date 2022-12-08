@@ -2,15 +2,16 @@ class App
 {
     runApplication()
     {
-        this.tekenHuis();
-    }
-
-    tekenHuis()
-       {
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
-        
         console.log(canvas)
+        let x = 200;
+        let y = 300;
+        this.tekenHuis(g,x,y);
+    }
+
+    tekenHuis(g, x, y)
+       {
         
         // Lucht 
         g.beginPath()
@@ -37,10 +38,10 @@ class App
         // Groot dak vlak
         g.beginPath()
         g.fillStyle = "#cc0000";
-        g.moveTo(300,100);
-        g.lineTo(200,300);
-        g.lineTo(600,400);
-        g.lineTo(700,200);
+        g.moveTo(x,y);
+        g.lineTo(x - 10,y + 20);
+        g.lineTo(x + 30, y + 30);
+        g.lineTo(x + 40,y + 10);
         g.closePath();
         g.stroke();
         g.fill()
@@ -48,24 +49,20 @@ class App
         // Driehoek dak vlak
         g.beginPath()
         g.fillStyle = "#990033";
-        g.moveTo(700,200);
-        g.lineTo(600,400);
-        g.lineTo(800,300);
+        g.moveTo(x + 40, y + 10);
+        g.lineTo(x + 30, y + 30);
+        g.lineTo(x + 50,y + 20);
         g.closePath();
         g.stroke();
         g.fill()
 
-        // deur
-        g.beginPath()
-        g.fillStyle = "#663300 "
-
         // Groot muur vlak
         g.beginPath()
         g.fillStyle = "#ffcc99";
-        g.moveTo(200,300);
-        g.lineTo(200,500);
-        g.lineTo(600,600);
-        g.lineTo(600,400);
+        g.moveTo(x - 10, y + 20);
+        g.lineTo(x + -10, y + 40); 
+        g.lineTo(x + 30, y + 50);
+        g.lineTo(x + 30, y + 30);
         g.closePath();
         g.stroke();
         g.fill()
@@ -73,10 +70,10 @@ class App
         // raam
         g.beginPath()
         g.fillStyle = "#FDD835";
-        g.moveTo(250,340);
-        g.lineTo(250,420);
-        g.lineTo(350,445);
-        g.lineTo(350,365);
+        g.moveTo(x - 5, y + 24);
+        g.lineTo(x - 5, y + 32);
+        g.lineTo(x + 5, y + 34.5);
+        g.lineTo(x + 5, y + 26.5);
         g.closePath();
         g.stroke();
         g.fill()
@@ -84,10 +81,10 @@ class App
         // Klein muur vlak
         g.beginPath()
         g.fillStyle = "#ffb366"
-        g.moveTo(600,400);
-        g.lineTo(600,600);
-        g.lineTo(800,500);
-        g.lineTo(800,300);
+        g.moveTo(x + 30, y + 30);
+        g.lineTo(x + 30, y + 50);
+        g.lineTo(x + 50, y + 40);
+        g.lineTo(x + 50, y + 20);
         g.closePath();
         g.stroke();
         g.fill()
