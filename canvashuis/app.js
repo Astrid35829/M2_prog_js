@@ -4,7 +4,7 @@ class App
     {
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
-        console.log(canvas)
+        console.log(canvas);
         let x = 200;
         let y = 300;
         this.tekenHuis(g,x,y);
