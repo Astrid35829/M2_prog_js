@@ -1,0 +1,107 @@
+
+
+class App
+{
+
+    runApplication()
+    {
+        console.log("Hello World");
+        this.randomGetal();
+        //mine
+        let d = this.randomGetal();
+        console.log(d);
+
+        
+        let classs = this.rollClass();
+        console.log(classs);
+        let head1 = document.getElementById("claass");
+        head1.innerHTML = classs;
+
+
+        let stamina = "stamina" + "=" + this.rollBabarian();
+        console.log(stamina);
+        let header1 = document.getElementById("s1");
+        header1.innerHTML = stamina;
+
+        let strength = "strength" + "=" + this.rollBabarian();
+        console.log(strength);
+        let header2 = document.getElementById("s2");
+        header2.innerHTML = strength;
+
+        let intelect = "intelect" + "=" + this.rollBabarian();
+        console.log(intelect);
+        let header3 = document.getElementById("s3");
+        header3.innerHTML = intelect;
+
+        let wisdom = "wisdom" + "=" + this.rollBabarian();
+        console.log(wisdom);
+        let header4 = document.getElementById("s4");
+        header4.innerHTML = wisdom;
+
+        let charisma = "charisma" + "=" + this.rollBabarian();
+        console.log(charisma);
+        let header5 = document.getElementById("s5");
+        header5.innerHTML = charisma;
+
+        let constitution = "constitution" + "=" + this.rollBabarian();
+        console.log(constitution);
+        let header6 = document.getElementById("s6");
+        header6.innerHTML = constitution;
+    }
+
+    randomGetal()
+    {
+        let random = Math.floor(Math.random()*6)+1;
+
+        //mine
+        //console.log(random);
+        return random
+    }
+
+    rollBabarian()
+    {
+        let d1 = this.randomGetal();
+        let d2 = this.randomGetal();
+        let d3 = this.randomGetal();
+        let d4 = this.randomGetal();
+
+        let diceArr = [d1, d2, d3 ,d4];
+        console.log(diceArr);
+        diceArr.sort();
+        console.log(diceArr);
+        let som = diceArr[1] + diceArr[2] + diceArr[3];
+        return som;
+    }
+
+
+    // own idea added
+    rollClass()
+    {
+        let class1 = this.randomGetal();
+
+        if(class1 == 1){
+            class1 = "rogue";
+        }
+        else if(class1 == 2){
+            class1 = "druid";
+        }
+        else if(class1 == 3){
+            class1 = "babarian";
+        }
+        else if(class1 == 4){
+            class1 = "wizard";
+        }
+        else if(class1 == 5){
+            class1 = "cleric";
+        }
+        else if(class1 == 6){
+            class1= "warlock";
+        }
+
+        return class1;
+        
+    }
+}
+
+let app = new App();
+app.runApplication();

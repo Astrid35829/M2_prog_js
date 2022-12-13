@@ -7,9 +7,12 @@ class App
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
         console.log(canvas);
-        let x = Math.random()*1000;
-        let y = Math.random()*700;
-        this.tekenCirkel(g,x,y);
+       
+        for(let i = 0; i < 200; i++){
+            let x = Math.random()*1000;
+            let y = Math.random()*700;
+            this.tekenCirkel(g, x, y);
+        }
     }
 
     tekenCirkel(g, x, y)
