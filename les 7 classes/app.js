@@ -11,18 +11,15 @@ class Dino
         this.honger = true;
     }
 
-    eetDino()
+    eetDino(dino)
     {
-        Dino.leeft = false;
+        dino.leeft = false;
         console.log("Trex eet de dino Ankylosaurus");
     }
 
-    eetPlant()
+    eetPlant(plant)
     {
-        this.plant = plant;
-        
-        let plant = "gras"
-        console.log("Ankylosaurus eet de plant" + plant);
+        this.plant1 = plant;
     }
 }
 
@@ -47,9 +44,11 @@ class App
         let anne = new Dino("Spinosaurus", true, 14);
         console.log(anne);
 
-        
-        meep.eetPlant();
-        trex.eetDino();
+        let plant1 = new Plant("gras");
+        console.log("Ankylosaurus eet de plant " , plant1.naam);
+
+        meep.eetPlant(plant1);
+        trex.eetDino(meep);
     }
     
 }
