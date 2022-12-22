@@ -1,16 +1,28 @@
+//Now im lost...
+
 class Dino
 {
-    constructor(naam, vleeseter, leeftijd, leeft)
+    constructor(naam, vleeseter, leeftijd)
     {
         this.naam = naam;
         this.vleeseter = vleeseter;
         this.leeftijd = leeftijd;
+        this.leeft = true;
+        this.honger = true;
     }
 
-    eetDino(meep)
+    eetDino()
     {
         Dino.leeft = false;
+        console.log("Trex eet de dino Ankylosaurus");
+    }
+
+    eetPlant()
+    {
+        this.plant = plant;
         
+        let plant = "gras"
+        console.log("Ankylosaurus eet de plant" + plant);
     }
 }
 
@@ -19,8 +31,6 @@ class Plant
     constructor(naam)
     {
         this.naam = naam;
-        this.leeft = true;
-        this.honger = true;
     }
 }
 
@@ -28,14 +38,18 @@ class App
 {
     runApplication()
     {
-        let trex = new Dino("Trex", true,10);
+        let trex = new Dino("Trex", true, 10);
         console.log(trex);
 
-        let meep = new Dino("Meep", false, 2);
+        let meep = new Dino("Ankylosaurus", false, 2);
         console.log(meep);
 
-        let anne = new Dino("Anne", true, 14);
+        let anne = new Dino("Spinosaurus", true, 14);
         console.log(anne);
+
+        
+        meep.eetPlant();
+        trex.eetDino();
     }
     
 }

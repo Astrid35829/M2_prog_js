@@ -7,6 +7,7 @@
 - Les 4 Functions  
 - Les 5 Array en Loops  
 - Les 6 Events  
+- Les Herhaling (extra)
 
 ## Lessons To-Do:
 - les 7 Classes  

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: lightgreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body{
+    background: rgb(149, 221, 241);
+    
+}
+
+.knop{
+    background: lightblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    background: rgb(135, 245, 255);
+
+}
+
+.classTitle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(125, 125, 255);
+}
+
+.stats{
+    background: rgb(210, 240, 250);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
