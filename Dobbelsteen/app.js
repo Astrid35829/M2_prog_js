@@ -27,10 +27,10 @@ class App
             head1.innerHTML = classs;
 
             //1
-            let stamina = "Stamina" + "=" + this.rollBabarian();
-            console.log(stamina);
+            let dexterity = "Dexterity" + "=" + this.rollBabarian();
+            console.log(dexterity);
             let header1 = document.getElementById("s1");
-            header1.innerHTML = stamina;
+            header1.innerHTML = dexterity;
 
             //2
             let strength = "Strength" + "=" + this.rollBabarian();
