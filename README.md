@@ -9,9 +9,11 @@
 - Les 6 Events  
 - Les Herhaling (extra)  
 - les 7 Classes  
+- les 8 modules  
+- les 9 Debugging   
 
 ## Lessons To-Do:  
-- les 8 modules    
+ 
 
  
 
