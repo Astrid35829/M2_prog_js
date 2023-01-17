@@ -13,7 +13,7 @@
 - les 9 Debugging   
 
 ## Lessons To-Do:  
- 
+ - Eindopdracht  
 
  
 
