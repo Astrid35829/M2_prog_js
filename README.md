@@ -10,10 +10,11 @@
 - Les Herhaling (extra)  
 - les 7 Classes  
 - les 8 modules  
-- les 9 Debugging   
+- les 9 Debugging 
+ - Eindopdracht  
 
 ## Lessons To-Do:  
- - Eindopdracht  
+  
 
  
 
